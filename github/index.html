@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>GitHub</title>
+        <link rel="stylesheet" href="github.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="left">
+                    <div class="logo">
+                        <a href="#">
+                            <svg class="svg" width="1.5rem" height="1.5rem" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="cloud">
+                                        <path d="M16.8792928,9.09695343 C18.6654343,9.4976045 20,11.09295 20,13 C20,15.209139 18.209139,17 16,17 L5,17 C2.23857625,17 0,14.7614237 0,12 C0,9.58046798 1.71857515,7.56233069 4.00162508,7.09968852 C4.00054449,7.06659179 4,7.03335948 4,7 C4,5.34314575 5.34314575,4 7,4 C7.55384606,4 8.07263826,4.1500834 8.51792503,4.41179863 C9.4182103,3.53797709 10.6462795,3 12,3 C14.7614237,3 17,5.23857625 17,8 C17,8.37684164 16.9583108,8.74394625 16.8792928,9.09695343 Z" id="Combined-Shape"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form action="#">
+                            <input type="text" name="search" id="search" class="form-input" placeholder="Search CloudHub">
+                        </form>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="profile dropdown">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="img/logo.jpg" alt="@zaknes">
+                                <span class="dropdown-caret"></span>
+                            </div>
+                        </a>
+                        <ul>
+                            <li><span>Signed in as <strong>zaknes</strong></span></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Notifications</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="tabnav">
+                    <div class="tabnav-tabs">
+                        <a href="#" class="tabnav-tab active">
+                            Notifications
+                        </a><!--
+                        --><a href="#" class="tabnav-tab">
+                            Watching
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('a.tabnav-tab').on('click', function () {
+                    $('a.tabnav-tab').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+
+                $('.dropdown > a').on('click', function () {
+                    $('.dropdown ul').removeClass('show');
+                    $(this).parent('.dropdown').children('ul').toggleClass('show');
+                });
+
+                $('html').on('click', function (e) {
+                    if ($(e.target).closest('.dropdown').length === 0) {
+                        $('.dropdown ul').removeClass('show');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
