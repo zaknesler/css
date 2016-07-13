@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 5rem auto;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tabnav {
+    border-bottom: 1px solid #ddd;
+}
+
+.tabnav-tabs {
+    margin-bottom: -1px;
+}
+
+.tabnav-tab {
+    padding: 0.75rem 1rem;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    margin-right: -1px;
+}
+
+.tabnav-tab:last-child {
+    margin-right: 0;
+}
+
+.tabnav-tab.active {
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    background-color: #fff;
+    border-radius: 3px 3px 0 0;
+}
