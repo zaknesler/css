@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    $('a.tabnav-tab').on('click', function () {
-        $('a.tabnav-tab').removeClass('active');
-        $(this).addClass('active');
-    });
-
     $('.dropdown > a').on('click', function (e) {
         e.preventDefault();
 
