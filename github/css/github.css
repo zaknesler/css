@@ -18,7 +18,7 @@ body {
     -webkit-font-smoothing: antialiased;
     color: #333;
     background-color: #fff;
-    line-height: 1rem;
+    line-height: 1.5;
     display: table;
     width: 100%;
 }
@@ -26,12 +26,10 @@ body {
 a {
     text-decoration: none;
     color: #333;
-    transition: color 150ms ease-in-out;
 }
 
 a:hover {
     color: #4078c0;
-    transition: color 150ms ease-in-out;
 }
 
 a.inv,
@@ -53,7 +51,8 @@ h6 {
     font-weight: 500;
 }
 
-.text-light {
+.text-light,
+.tabs .tab a {
     color: #767676;
 }
 
@@ -69,7 +68,7 @@ h6 {
     display: flex;
     display: -webkit-flex;
     -webkit-flex-direction: row;
-   flex-direction: row;
+    flex-direction: row;
 }
 
 .container {
@@ -121,12 +120,10 @@ h6 {
 
 .header .logo g#cloud {
     fill: #333333;
-    transition: fill 150ms ease-in-out;
 }
 
 .header .logo a:hover g#cloud {
     fill: #4078c0;
-    transition: fill 150ms ease-in-out;
 }
 
 .header .logo .svg {
@@ -227,12 +224,10 @@ h6 {
 .header .dropdown li a:hover {
     background-color: #4078c0;
     color: #fff;
-    transition: background-color 150ms ease-in-out;
 }
 
 .tabs .tab {
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     background: #fff;
     border-radius: 3px;
 }
@@ -247,7 +242,7 @@ h6 {
 
 .tabs .tab a {
     display: block;
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
 .tabs .tab a .left {
@@ -328,6 +323,10 @@ h6 {
     padding-bottom: 1rem;
 }
 
+.well .icon {
+    margin-bottom: 1rem;
+}
+
 .tabnav {
     border-bottom: 1px solid #ddd;
 }
@@ -358,17 +357,19 @@ h6 {
     border-radius: 3px;
     border: 1px solid #ddd;
     color: #333;
-    transition: border-color 150ms ease-in-out;
     vertical-align: middle;
 }
 
 .form-input:focus {
     border-color: #51a7e8;
     outline: none;
-    transition: border-color 150ms ease-in-out;
 }
 
 @media screen and (min-width: 840px) {
+    p {
+        font-size: 1rem;
+    }
+
     .header .search .form-input {
         width: 20rem;
     }
@@ -388,26 +389,20 @@ h6 {
 
     .column-side {
         margin-right: 0;
+        max-width: 100%;
     }
 
     .column-main {
         margin-left: 0;
     }
 
-    .column-side {
-        -webkit-flex: 1 0 0;
-        flex: 1 0 0;
-        margin-right: 0.5rem;
-        max-width: 100%;
-    }
-
     .well.large {
-        padding: 1rem;
+        padding: 3rem 1rem;
     }
 }
 
 @media screen and (max-width: 360px) {
     .header .search .form-input {
-        width: 8.5rem;
+        width: 8rem;
     }
 }
