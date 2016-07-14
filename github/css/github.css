@@ -51,8 +51,7 @@ h6 {
     font-weight: 500;
 }
 
-.text-light,
-.tabs .tab a {
+.text-light {
     color: #767676;
 }
 
@@ -243,6 +242,7 @@ h6 {
 .tabs .tab a {
     display: block;
     padding: 0.75rem;
+    color: #767676;
 }
 
 .tabs .tab a .left {
@@ -259,7 +259,7 @@ h6 {
 }
 
 .tabs .tab:not(.active):hover a {
-    color: inherit;
+    color: #767676;
 }
 
 .footer {
@@ -341,6 +341,7 @@ h6 {
     border: 1px solid transparent;
     border-bottom: 0;
     line-height: 1rem;
+    color: #767676;
 }
 
 .tabnav-tab.active {
@@ -348,6 +349,7 @@ h6 {
     border-bottom: 0;
     background-color: #fff;
     border-radius: 3px 3px 0 0;
+    color: #333;
 }
 
 .form-input {
