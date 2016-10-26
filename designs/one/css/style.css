@@ -7,7 +7,7 @@
 }
 
 *::selection {
-    color: #fff;
+    color: #111;
     background-color: #bdd5ea;
 }
 
@@ -68,7 +68,12 @@ a:hover {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 12px;
     margin-top: -10px;
+    margin-bottom: 10px;
     color: #ddd;
+}
+
+.top-section .header .nav-toggle {
+    display: none;
 }
 
 .top-section .header .nav-ul {
@@ -115,13 +120,18 @@ a:hover {
     max-width: 350px;
 }
 
+.form {
+    margin-bottom: 20px;
+}
+
 .form-input {
     padding: 15px;
-    border: #f9f9f9;
+    border: none;
     border-radius: 3px;
     font-size: 18px;
     color: #555;
     width: 100%;
+    background-color: #f3f3f3;
 }
 
 .form-input:focus {
@@ -133,4 +143,45 @@ a:hover {
     background-repeat: no-repeat;
     background-position: left 20px center;
     background-image: url(../img/icons/search.svg);
+}
+
+.heading {
+    font-family: "Operator Mono", "Fira Mono", "Fira Code", consolas, monospace;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.heading span {
+    border-bottom: 3px solid #777;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon.icon-menu {
+    background-image: url(../img/icons/menu.svg);
+}
+
+@media screen and (max-width: 750px) {
+    .top-section .nav .nav-toggle {
+        display: block;
+    }
+
+    .top-section .header .nav-ul {
+        display: none;
+        width: 100%;
+    }
+
+    .top-section .nav .nav-toggle:focus + .nav-ul,
+    .top-section .nav .nav-toggle:active + .nav-ul {
+        display: block;
+    }
 }
