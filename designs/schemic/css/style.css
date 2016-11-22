@@ -145,18 +145,6 @@ a:hover {
     background-image: url(../img/icons/search.svg);
 }
 
-.heading {
-    font-family: "Operator Mono", "Fira Mono", "Fira Code", consolas, monospace;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.heading span {
-    border-bottom: 3px solid #777;
-}
-
 .icon {
     width: 18px;
     height: 18px;
@@ -168,6 +156,18 @@ a:hover {
 
 .icon.icon-menu {
     background-image: url(../img/icons/menu.svg);
+}
+
+section .heading {
+    font-family: "Operator Mono", "Fira Mono", "Fira Code", consolas, monospace;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+section .heading span {
+    border-bottom: 3px solid #777;
 }
 
 @media screen and (max-width: 750px) {
