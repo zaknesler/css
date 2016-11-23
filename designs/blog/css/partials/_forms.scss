@@ -1,0 +1,50 @@
+.form-group {
+    display: block;
+    margin-bottom: $spacing;
+
+    &.has-error {
+        & .form-label {
+            color: $color-danger;
+        }
+
+        & .form-input {
+            border-color: $color-danger;
+        }
+
+        & .error-message {
+            margin-top: ($spacing / 4);
+            color: $color-danger;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form-label {
+    display: block;
+    margin-bottom: ($spacing / 4);
+}
+
+.form-input {
+    padding: ($spacing / 2);
+    border: 1px solid $form-border-color;
+    border-radius: 2px;
+    color: $text-color-base;
+    width: 100%;
+    background-color: #fff;
+    font-size: $font-size-base;
+    font-family: $font-family-sans-serif;
+    line-height: $line-height-base;
+
+    &:focus {
+        outline: 0;
+        border-color: darken($form-border-color, 25%);
+    }
+}
+
+textarea.form-input {
+    resize: vertical;
+    height: auto;
+}
