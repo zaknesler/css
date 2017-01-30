@@ -30,11 +30,11 @@
 .form-input {
     padding: $padding-small;
     border: 1px solid $form-border-color;
-    border-radius: 0.2rem;
+    border-radius: 2px;
     color: $font-color-light;
     width: 100%;
     background-color: #fff;
-    font-size: 0.925rem;
+    font-size: ($font-size * 0.925);
     font-family: $font-family;
     line-height: $line-height;
 

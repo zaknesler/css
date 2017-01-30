@@ -1,12 +1,12 @@
 .btn {
-    padding: 0.25rem 0.5rem;
+    padding: 5px 10px;
     border: 1px solid darken($color-default, 5%);
     background-color: #fff;
-    border-radius: 0.2rem;
+    border-radius: 2px;
     color: $font-color-light;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: $font-size;
     line-height: $line-height;
     cursor: pointer;
     vertical-align: middle;
@@ -20,7 +20,7 @@
 
     &:hover {
         text-decoration: none;
-        background-color: darken($color-default, 5%);
+        background-color: darken($color-default, 3.5%);
     }
 
     &:focus {
@@ -29,12 +29,12 @@
     }
 
     &.btn-sm {
-        padding: 0.25rem;
-        font-size: 0.75rem;
+        padding: $padding-extra-small;
+        font-size: ($font-size * 0.75);
     }
 
     &.btn-lg {
-        padding: 0.5rem 0.75rem;
+        padding: $padding-small $padding-normal;
     }
 
     &.btn-block {
@@ -48,7 +48,7 @@
         color: #fff;
 
         &:hover {
-            background-color: darken($color-primary, 5%);
+            background-color: darken($color-primary, 3.5%);
         }
 
         &:focus {
@@ -62,7 +62,7 @@
         color: #fff;
 
         &:hover {
-            background-color: darken($color-danger, 5%);
+            background-color: darken($color-danger, 3.5%);
         }
 
         &:focus {
