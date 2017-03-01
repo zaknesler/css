@@ -13,6 +13,7 @@ body {
     color: $font-color;
     font-weight: $font-weight;
     line-height: $line-height;
+    font-size: $font-size;
     background-color: #fff;
 }
 
@@ -44,7 +45,7 @@ hr {
 ul.list-group {
     list-style: none;
     border: 1px solid $border-color;
-    border-radius: 0.2rem;
+    border-radius: 2px;
 
     & .list-group-item {
         padding: $padding-normal;
@@ -77,13 +78,13 @@ ul.pagination {
         }
 
         &:not(.active):not(.disabled):hover a {
-            background-color: lighten($color-theme, 30%);
+            background-color: lighten($color-theme, 25%);
         }
 
         & a {
-            border-radius: 0.2rem;
+            border-radius: 2px;
             display: inline-block;
-            padding: 0.25rem 0.75rem;
+            padding: ($font-size * 0.25) ($padding-normal * 0.65);
             text-decoration: none;
             background-color: transparent;
             color: $font-color;
