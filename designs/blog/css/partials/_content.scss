@@ -1,37 +1,26 @@
-.content a {
-    color: $anchor-color;
-}
-
 .section:not(:last-child),
-.post:not(:last-child) {
+.article:not(:last-child) {
     margin-bottom: ($spacing * 2);
 }
 
-.post-header {
+.article-header {
     margin-bottom: $spacing;
 }
 
 .section-title,
-.post-header .title,
-.post-header .title a {
+.message-name,
+.article-header .title,
+.article-header .title a {
     color: $text-color-dark;
     font-size: $font-size-large;
 }
 
-.post-header .date {
+.article-header .date {
     color: $text-color-light;
     font-size: $font-size-small;
 }
 
-b, p, h1, h2, h3, h4, h5, h6, ol, ul, img, pre, code, form, footer, header, strong, blockquote, .margin-bottom {
-    margin-bottom: $spacing;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-}
-
-.post-footer {
+.article-footer {
     margin-top: $spacing;
     color: $text-color-light;
     font-size: $font-size-small;
@@ -39,4 +28,111 @@ b, p, h1, h2, h3, h4, h5, h6, ol, ul, img, pre, code, form, footer, header, stro
 
 .section-header {
     margin-bottom: $spacing;
+}
+
+.message-date,
+.message-website {
+    color: $text-color-light;
+}
+
+.message-body {
+    max-width: 100%;
+    margin-top: $spacing;
+}
+
+.content {
+    word-wrap: break-word;
+
+    & a {
+        color: $anchor-color;
+    }
+
+    b, p, h1, h2, h3, h4, h5, h6, ol, ul, img, pre, code, form, footer, header, strong, blockquote, .margin-bottom {
+        margin-bottom: $spacing;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: $font-weight-bold;
+        font-style: normal;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    hr {
+        padding: 0;
+        margin: (($spacing / 2) - 1px) 0 $spacing 0;
+        width: 100%;
+        border: none;
+        border-top: 1px dashed #999;
+        border-bottom: 1px dashed #999;
+    }
+
+    ol, ul {
+        margin-left: ($spacing * 1.5);
+
+        &.pagination,
+        &.list-group,
+        &.no-margin {
+            margin-left: 0;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    pre {
+        padding: ($spacing / 2);
+    }
+
+    code {
+        padding: ($spacing / 4);
+    }
+
+    pre, code {
+        background: #f0f0f0;
+        font-family: $font-family-monospace;
+        overflow-x: auto;
+    }
+}
+
+.list-group {
+    list-style: none;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+}
+
+.list-group_item {
+    padding: $spacing;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+        border-bottom: 0;
+    }
 }

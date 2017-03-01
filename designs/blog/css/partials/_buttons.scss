@@ -2,7 +2,7 @@
     padding: ($spacing / 4) ($spacing / 2);
     border: 1px solid darken($color-default, 5%);
     background-color: #fff;
-    border-radius: 2px;
+    border-radius: 3px;
     color: $text-color-light;
     text-decoration: none;
     display: inline-block;
@@ -20,7 +20,7 @@
 
     &:hover {
         text-decoration: none;
-        background-color: darken($color-default, 5%);
+        background-color: darken($color-default, 3.5%);
     }
 
     &:focus {
@@ -48,7 +48,7 @@
         color: #fff;
 
         &:hover {
-            background-color: darken($color-primary, 5%);
+            background-color: darken($color-primary, 3.5%);
         }
 
         &:focus {
@@ -62,7 +62,7 @@
         color: #fff;
 
         &:hover {
-            background-color: darken($color-danger, 5%);
+            background-color: darken($color-danger, 3.5%);
         }
 
         &:focus {

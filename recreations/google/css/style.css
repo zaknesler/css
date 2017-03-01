@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.container {
+    padding: 20px;
+}
+
+.text-light {
+    color: #a0a0a0;
+}
+
+.header {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+}
+
+.header-brand {
+    font-size: 36px;
+    font-weight: 500;
+    min-width: 160px;
+    text-align: center;
+}
+
+.header-search {
+    margin-left: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.input {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    width: 100%;
+    color: #555;
+}
+
+.input:focus {
+    outline: 0;
+    border-color: #a0a0a0;
+}
+
+.brand-blue {
+    color: #4285f4;
+}
+
+.brand-green {
+    color: #34a853;
+}
+
+.brand-yellow {
+    color: #fbbc05;
+}
+
+.brand-red {
+    color: #ea4335;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content a:visited {
+    color: #1a0dab;
+}
+
+.search-results {
+    margin-left: 180px;
+    max-width: 600px;
+}
+
+.search-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.search-item-website,
+.search-item-meta {
+    font-size: 16px;
+}
+
+.search-item-website {
+    margin: 2px 0;
+    color: #006621;
+}
+
+@media screen and (max-width: 900px) {
+    .header-flex {
+        display: block;
+    }
+
+    .header-brand {
+        min-width: 0;
+        margin-bottom: 20px;
+    }
+
+    .header-search {
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .search-results {
+        margin-left: 0;
+    }
+}
