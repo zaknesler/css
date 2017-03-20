@@ -26,14 +26,21 @@
     .header-toggle {
         display: none;
 
-        a span {
-            width: 20px;
-            height: 3px;
-            background-color: $body-text-color;
-            display: block;
+        a {
+            span {
+                width: 20px;
+                height: 3px;
+                background-color: $color-theme;
+                display: block;
 
-            &:not(:last-child) {
-                margin-bottom: 3px;
+                &:not(:last-child) {
+                    margin-bottom: 3px;
+                }
+            }
+
+            &:hover span {
+                background-color: darken($color-theme, 20%);
+                @include transition(background-color 150ms ease-in);
             }
         }
     }
