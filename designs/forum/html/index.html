@@ -1,19 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
-        <title>Forum</title>
+    <title>Forum</title>
 
-        <link rel="stylesheet" href="../scss/app.css" />
-    </head>
-    <body>
-        <div class="container">
-            <section class="section section-forums">
+    <link rel="stylesheet" href="../app.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrap container">
+            <div class="header-top">
+                <div class="header-brand">Forum</div>
 
-            </section>
+                <div class="header-toggle">
+                    <a href="#"><span></span><span></span><span></span></a>
+                </div>
+            </div>
+
+            <div class="header-nav">
+                <ul class="left">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Topics</a></li>
+                </ul>
+
+                <ul class="right">
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
         </div>
-    </body>
+    </div>
+
+    <div class="banner">
+        <div class="banner-wrap container">
+            <div class="banner-title">
+                Create New Topic
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="content">
+        <div class="content-wrap container">
+            <div class="form">
+                <div class="form-group">
+                    <div class="form-label">Title</div>
+
+                    <input type="text" name="body" class="form-input" />
+                </div>
+
+                <div class="form-group">
+                    <div class="form-label">Body</div>
+
+                    <textarea name="body" rows="10" class="form-input"></textarea>
+                </div>
+
+                <div class="form-group text-right">
+                    <input type="submit" value="Create Topic" class="button button-large" />
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="content">
+        <div class="content-wrap container">
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <a href="#" class="post-author_image" style="background-image: url(https://www.gravatar.com/avatar/750313fab1fa78712d00be83617e5248?s=50&d=mm)"></a>
+
+                        <div class="post-author_info">
+                            <a href="#">Alex Smith</a> <br /> 20 minutes ago
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-body">
+                    <h3>About Sitosis Minecraft</h3>
+
+                    <p>Sitosis is a private, survival <a href="https://minecraft.net">Minecraft</a> server. We are looking to build a community of mature Minecraft players; players that share a common interest in a server that abides by the following general precepts:</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Vanilla:</strong> No game-altering modifications or plugins should be employed.</p>
+
+                            <ul>
+                                <li>
+                                    <p>Sitosis only uses logging and rollback mods to aid in the identification of thieves, griefers, and cheaters and repair any damage done by them.</p>
+                                </li>
+
+                                <li>
+                                    <p>Players enjoy Minecraft in its unaltered form and do not employ client-side hacks or cheats which give advantages to some and ruin the immersion for others.</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><strong>Mature:</strong> The community should value maturity in its players above all else.</p>
+
+                            <ul>
+                                <li>
+                                    <p>Thieves, griefers, and cheaters are dealt with swiftly; all bans are permanent.</p>
+                                </li>
+
+                                <li>
+                                    <p>There is no age restriction on membership, but immature and obnoxious behavior from players of any age will result in expulsion if not corrected after sufficient warning.</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><strong>Fun:</strong> A friendly environment of co-operation, comradery, and helpfulness should be fostered, in which players of all styles can feel welcomed and comfortable.</p>
+
+                            <ul>
+                                <li>
+                                    <p>Whether you're a team-player who wants to get involved in massive community undertakings, or just want to find your own remote spot to build alone, you're welcome at Sitosis!</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="post-footer">
+                    <a href="#" class="button button">Report</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <a href="#" class="post-author_image" style="background-image: url(https://www.gravatar.com/avatar/95e5fc57d50a76f026c60c6d6edb6f78?s=50&d=mm)"></a>
+
+                        <div class="post-author_info">
+                            <a href="#">Zak Nesler</a> <br /> 20 minutes ago
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui earum a voluptate aliquid dolores vitae doloremque autem adipisci enim obcaecati maiores, corrupti ipsum nisi possimus minima facere, molestias, natus odio!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ullam, voluptates aliquam. Veniam hic nihil, ad. Eveniet accusamus aspernatur voluptatibus tempora cum, provident quasi repellendus minima nulla eaque, non odit optio dignissimos, voluptatum delectus rem. Dicta animi ut fugiat error delectus blanditiis a, velit perspiciatis repellendus fuga corporis aut labore minus adipisci asperiores placeat, doloremque quisquam quas debitis! Modi atque maiores fuga mollitia earum provident. Voluptatibus consequuntur cumque eum labore cupiditate corrupti vero aspernatur necessitatibus, vel quia unde ullam quam accusamus hic minima, repellat adipisci assumenda suscipit ipsam explicabo inventore id voluptate, neque nihil! Non odio itaque voluptatibus! Cupiditate non impedit inventore fuga illum vero obcaecati natus quibusdam nihil, porro laboriosam accusantium nam dolore numquam facere quod aut nemo, aliquam tempore dolores, asperiores est dolorum maxime sequi! Sequi hic reiciendis ullam expedita natus quaerat nemo inventore quas quibusdam, aperiam quidem similique fugit possimus nam fuga, eos eligendi a officiis quam!</p>
+                </div>
+
+                <div class="post-footer">
+                    <a href="#" class="button button">Report</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <a href="#" class="post-author_image" style="background-image: url(https://www.gravatar.com/avatar/95e5fc57d50a76f026c60c6d6edb6f78?s=50&d=mm)"></a>
+
+                        <div class="post-author_info">
+                            <a href="#">Zak Nesler</a> <br /> 20 minutes ago
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-body">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium odit, itaque ullam deserunt, ea aliquid veritatis maiores similique laboriosam assumenda soluta placeat, alias qui incidunt, a at voluptatibus in distinctio.</blockquote>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui earum a voluptate aliquid dolores vitae doloremque autem adipisci enim obcaecati maiores, corrupti ipsum nisi possimus minima facere, molestias, natus odio!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia totam sequi velit suscipit perferendis ullam, debitis eveniet sed dolorum ipsa <code>consequuntur, at commodi necessitatibus</code> optio beatae vitae accusamus, ratione voluptatem!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ullam, voluptates aliquam. Veniam hic nihil, ad. Eveniet accusamus aspernatur voluptatibus tempora cum, provident quasi repellendus minima nulla eaque, non odit optio dignissimos, voluptatum delectus rem. Dicta animi ut fugiat error delectus blanditiis a, velit perspiciatis repellendus fuga corporis aut labore minus adipisci asperiores placeat, doloremque quisquam quas debitis! Modi atque maiores fuga mollitia earum provident. Voluptatibus consequuntur cumque eum labore cupiditate corrupti vero aspernatur necessitatibus, vel quia unde ullam quam accusamus hic minima, repellat adipisci assumenda suscipit ipsam explicabo inventore id voluptate, neque nihil! Non odio itaque voluptatibus! Cupiditate non impedit inventore fuga illum vero obcaecati natus quibusdam nihil, porro laboriosam accusantium nam dolore numquam facere quod aut nemo, aliquam tempore dolores, asperiores est dolorum maxime sequi! Sequi hic reiciendis ullam expedita natus quaerat nemo inventore quas quibusdam, aperiam quidem similique fugit possimus nam fuga, eos eligendi a officiis quam!</p>
+                </div>
+
+                <div class="post-footer">
+                    <a href="#" class="button button">Report</a>
+                </div>
+            </div>
+
+            <div class="form">
+                <div class="form-title">
+                    Leave a reply
+                </div>
+
+                <div class="form-group has-error">
+                    <textarea name="body" rows="10" class="form-input" placeholder="Type your reply here..."></textarea>
+
+                    <div class="form-message">Body must be a minimum of 16 characters.</div>
+                </div>
+
+                <div class="form-group text-right">
+                    <input type="submit" value="Post Reply" class="button button-large" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
