@@ -15,12 +15,12 @@
             <div class="header-top">
                 <div class="header-brand">Forum</div>
 
-                <div class="header-toggle">
+                <div class="header-toggle" id="toggle">
                     <a href="#"><span></span><span></span><span></span></a>
                 </div>
             </div>
 
-            <div class="header-nav">
+            <div class="header-nav" id="nav">
                 <ul class="left">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Topics</a></li>
@@ -199,5 +199,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('toggle').addEventListener('click', function () {
+            if (document.getElementById('nav').classList.contains('visible')) {
+                document.getElementById('nav').classList.remove('visible')
+            } else {
+                document.getElementById('nav').classList.add('visible')
+            }
+        });
+    </script>
 </body>
 </html>
