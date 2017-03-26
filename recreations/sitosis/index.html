@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+        <title>Sitosis Minecraft</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="js/vue.min.js" defer></script>
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <div id="root" class="container" v-cloak>
+            <div class="banner container-wrap"></div>
+
+            <div class="stats container-wrap">
+                <div class="stats-world">
+                    Last new world: 2017-02-02
+                </div>
+
+                <div class="stats-applications">
+                    Applications: <span class="badge badge-closed">Closed</span>
+                </div>
+            </div>
+
+            <tabs>
+                <tab name="About" :selected="true">
+                    <h3>About Sitosis Minecraft</h3>
+
+                    <p>Sitosis is a private, survival <a href="https://minecraft.net">Minecraft</a> server. We are looking to build a community of mature Minecraft players; players that share a common interest in a server that abides by the following general precepts:</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Vanilla:</strong> No game-altering modifications or plugins should be employed.</p>
+
+                            <ul>
+                                <li>
+                                    <p>Sitosis only uses logging and rollback mods to aid in the identification of thieves, griefers, and cheaters and repair any damage done by them.</p>
+                                </li>
+
+                                <li>
+                                    <p>Players enjoy Minecraft in its unaltered form and do not employ client-side hacks or cheats which give advantages to some and ruin the immersion for others.</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><strong>Mature:</strong> The community should value maturity in its players above all else.</p>
+
+                            <ul>
+                                <li>
+                                    <p>Thieves, griefers, and cheaters are dealt with swiftly; all bans are permanent.</p>
+                                </li>
+
+                                <li>
+                                    <p>There is no age restriction on membership, but immature and obnoxious behavior from players of any age will result in expulsion if not corrected after sufficient warning.</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p><strong>Fun:</strong> A friendly environment of co-operation, comradery, and helpfulness should be fostered, in which players of all styles can feel welcomed and comfortable.</p>
+
+                            <ul>
+                                <li>
+                                    <p>Whether you're a team-player who wants to get involved in massive community undertakings, or just want to find your own remote spot to build alone, you're welcome at Sitosis!</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>Technical Details</h4>
+
+                    <div class="box box-specifications">
+                        <div class="box-header">
+                            Specifications
+                        </div>
+
+                        <div class="box-body">
+                            <ul class="specs-list">
+                                <li>
+                                    <div class="key">
+                                        Address
+                                    </div>
+
+                                    <div class="value">
+                                        mc.sitosis.com
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="key">
+                                        Online Since
+                                    </div>
+
+                                    <div class="value">
+                                        3/30/2011
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="key">
+                                        Availability
+                                    </div>
+
+                                    <div class="value">
+                                        24/7
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="key">
+                                        Server RAM
+                                    </div>
+
+                                    <div class="value">
+                                        3.0 GB
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="key">
+                                        Max Players
+                                    </div>
+
+                                    <div class="value">
+                                        20
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="key">
+                                        Backups
+                                    </div>
+
+                                    <div class="value">
+                                        Every 4 hours
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>Thanks to generous financial contributions from several players in the Sitosis community, Sitosis is able to provide a high-performance dedicated Minecraft server as well as a Mumble voice chat server to its players.</p>
+
+                    <p>We do our best to minimize down-time due to server crashes and other technical issues, and because we employ few plugins, we are able to keep up to date with the latest releases of Minecraft without lengthy delays waiting for a lot of mods to play catch-up first.</p>
+
+                    <p>Map resets are only performed after community votes, warnings are always given on the forum well in advance, and old maps are provided as downloads to players who wish to relive the glory days of the past on their own single player games.</p>
+
+                    <p><strong>Contributions to help to keep the server running are always welcome. You can contribute via PayPal using the button below or contact any of the admins for any questions. Thank you!</strong></p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="form-centered">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+
+                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                        ">
+
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </tab>
+
+                <tab name="Join">
+                    <h3>Applying to Sitosis</h3>
+
+                    <p>Sitosis Minecraft has three application states that it can be in at any given time. The current state can be seen at the top of this site.</p>
+
+                    <ul>
+                        <li>
+                            <p><span class="badge badge-open">Open</span> Open applications means we will accept and process applications from the general public.</p>
+                        </li>
+
+                        <li>
+                            <p><span class="badge badge-recruiting">Recruiting</span> We are not accepting applications from the general public, but we have active recruitment campaigns going on and are accepting applications in response to those campaigns.</p>
+                        </li>
+
+                        <li>
+                            <p><span class="badge badge-closed">Closed</span> When applications are closed, it means we are only accepting new applications from players who have been referred by an existing player on the server.</p>
+                        </li>
+                    </ul>
+
+                    <h4>How to Apply</h4>
+
+                    <p>If you wish to join our community, simply apply for an account on the <a href="http://mc.sitosis.com/forum/">forum</a>. But first, please familiarize yourself with the following guidelines:</p>
+
+                    <ol>
+                        <li>
+                            <p>Your forum username <strong>must be the same</strong> as your Minecraft username (this is the name we will be adding to the server whitelist upon acceptance of your application).</p>
+                        </li>
+
+                        <li>
+                            <p>When asked why you want to join, please tell us a bit about yourself and what you're looking for in a Minecraft server, and if you were referred by an existing player be sure to mention that player's name.</p>
+                        </li>
+
+                        <li>
+                            <p>If you were referred, ask the player who referred you to send an email to <a href="mailto:mcadmins@sitosis.com">mcadmins@sitosis.com</a> with both of your in-game names in order to confirm the referral&mdash;this is <strong>very important</strong> and missing this step will result in a much longer delay for your application to be processed or possible outright rejection of your application.</p>
+                        </li>
+
+                        <li>
+                            <p>A quick background check will be performed on your username. If you have any kind of ban history on other Minecraft servers, or affiliation with any hacking, modding, or griefing groups or communities, your application will be summarily rejected without notification. To prove you've read all of these guidelines, please also include a Minecraft-related haiku with your application when filling out the section on why you want to join. If you don't your application will be rejected.</p>
+                        </li>
+
+                        <li>
+                            <p>Applications can take up to a week or two to process. You will receive email notification once your application is approved. Please do not hound anyone on the server about the status of your application or it may result in its rejection.</p>
+                        </li>
+                    </ol>
+
+                    <h4>After Joining</h4>
+
+                    <p>Chances are you'll be joining an already fairly well-established map. Please respect other people's property when choosing a spot to build. If you want to build inside a heavily populated area, make sure there are no obvious claims (via in-game signs, signs on the map, or posts on the forum) before getting started. If you're unsure, it's always best to ask on the forum first.</p>
+                </tab>
+
+                <tab name="Help">
+                    <h3>New Player Guides</h3>
+
+                    <h4>Special Signs</h4>
+
+                    <p>There are a few special types of signs that players can create on the <a href="http://mc.sitosis.com/map/">server map</a> by including a special code in the sign text:</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>[LM]</strong> will create a Landmark sign. These should be used to identify large manmade structures or natural formations and biomes, such as cities, mountains, deserts, islands, and canyons.</p>
+                        </li>
+
+                        <li>
+                            <p><strong>[H]</strong> will create a Home sign. These should be used to identify individual buildings, such as your home, trading posts, and community centers.</p>
+                        </li>
+
+                        <li>
+                            <p><strong>[P]</strong> will create a Portal sign, which can be used to mark portals.</p>
+                        </li>
+                    </ul>
+
+                    <h4>Forum Posts</h4>
+
+                    <ul>
+                        <li>
+                            <p>Choose an appropriate category for your post; most categories are visible to everybody without needing to log in. "Members only" and "Land claims" requires a user to be authenticated in order to view.</p>
+                        </li>
+
+                        <li>
+                            <p><p>When making a land claim, include a map URL for the relevant area.</p></p>
+                        </li>
+                    </ul>
+                </tab>
+
+                <tab name="Abuse">
+                    <h3>Reporting Abuse</h3>
+
+                    <p>The following users have administrator privileges on the server and may be able to help you out:</p>
+
+                    <ul>
+                        <li>
+                            <p>asum2</p>
+                        </li>
+
+                        <li>
+                            <p>reopru</p>
+                        </li>
+
+                        <li>
+                            <p>pizike82</p>
+                        </li>
+
+                        <li>
+                            <p>fragonard</p>
+                        </li>
+                    </ul>
+
+                    <p>In an emergency griefing situation, if there are no admins online to handle it immediately, send an email to <a href="mailto:mcadmins@sitosis.com">mcadmins@sitosis.com</a>. This is a mailing list that sends a copy of your email to all of the server admins, and is the quickest way to get someone's attention.</p>
+                </tab>
+            </tabs>
+        </div>
+    </body>
+</html>
