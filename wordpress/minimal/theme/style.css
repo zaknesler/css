@@ -1,0 +1,108 @@
+/*
+Theme Name: Minimal
+Theme URI: https://zaknesler.com
+Author: Zak Nesler
+Author URI: https://zaknesler.com
+Description: A clone of Leo Babauta's mnmlist theme. Just made it nicer and more perfected.
+Version: 1.0
+*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Noto Serif", serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 60px;
+    max-width: 700px;
+}
+
+.post:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.post-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    text-transform: lowercase;
+}
+
+.post-header-subtitle {
+    font-weight: 700;
+}
+
+.post-content a {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.post-content a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.archive {
+    margin-top: -20px;
+}
+
+.archive-year th {
+    font-weight: 700;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.archive-month th,
+.archive-day th {
+    font-weight: 400 !important;
+}
+
+.footer {
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    display: inline;
+}
+
+.footer ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer ul li a {
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #999;
+    text-decoration: none;
+}

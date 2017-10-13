@@ -54,6 +54,7 @@ body {
 .input:focus {
     outline: 0;
     border-color: #a0a0a0;
+    transition: 150ms border-color ease-in-out;
 }
 
 .brand-blue {
