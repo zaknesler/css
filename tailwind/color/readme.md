@@ -1,1 +1,1 @@
-https://zaknes.github.io/tailwind/color/
+https://zaknes.github.io/css/tailwind/color/
