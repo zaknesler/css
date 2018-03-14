@@ -8,6 +8,7 @@
 - Sandbox
   - [Grid](https://zaknes.github.io/css/sandbox/grid/)
 - Tailwind
+  - [Blog](https://zaknes.github.io/css/tailwind/blog/public/)
   - [Color](https://zaknes.github.io/css/tailwind/color/)
   - [Forum](https://zaknes.github.io/css/tailwind/forum/)
 - WordPress
