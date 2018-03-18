@@ -208,6 +208,26 @@ module.exports = {
       'Helvetica Neue',
       'sans-serif',
     ],
+    // 'serif': [
+    //   'Constantia',
+    //   'Lucida Bright',
+    //   'Lucidabright',
+    //   'Lucida Serif',
+    //   'Lucida',
+    //   'DejaVu Serif',
+    //   'Bitstream Vera Serif',
+    //   'Liberation Serif',
+    //   'Georgia',
+    //   'serif',
+    // ],
+    'mono': [
+      'Menlo',
+      'Monaco',
+      'Consolas',
+      'Liberation Mono',
+      'Courier New',
+      'monospace',
+    ]
   },
 
 
@@ -823,7 +843,7 @@ module.exports = {
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
-    borderColors: ['responsive', 'hover'],
+    borderColors: ['responsive', 'hover', 'focus'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidths: ['responsive'],

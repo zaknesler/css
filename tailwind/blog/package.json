@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "cross-env": "^5.1.4",
-        "laravel-mix": "^2.1.0",
+        "laravel-mix": "^2.1.8",
         "less": "^3.0.1",
         "less-loader": "^4.1.0",
         "tailwindcss": "^0.5"
