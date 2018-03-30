@@ -11,5 +11,6 @@
   - [Blog](https://zaknes.github.io/css/tailwind/blog/public/)
   - [Color](https://zaknes.github.io/css/tailwind/color/)
   - [Forum](https://zaknes.github.io/css/tailwind/forum/)
+  - [Login](https://zaknes.github.io/css/tailwind/login/)
 - WordPress
   - [Minimal](https://zaknes.github.io/css/wordpress/minimal/)
