@@ -5,3 +5,17 @@
 .outline-none {
     outline: 0;
 }
+
+.markdown {
+    p {
+        @apply .mb-4;
+    }
+
+    a {
+        @apply .text-red .no-underline;
+
+        &:hover {
+            @apply .underline;
+        }
+    }
+}
