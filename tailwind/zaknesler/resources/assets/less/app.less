@@ -7,8 +7,31 @@
 }
 
 .markdown {
-    p {
+    p,
+    ul,
+    ol,
+    blockquote {
         @apply .mb-4;
+    }
+
+    b, strong {
+        @apply .font-bold;
+    }
+
+    i, emphasis {
+        @apply .italic;
+    }
+
+    ul, ol {
+        @apply .list-reset .ml-4 .pl-0;
+    }
+
+    ul {
+        list-style: disc inside;
+    }
+
+    ol {
+        list-style: decimal inside;
     }
 
     a {
@@ -19,3 +42,5 @@
         }
     }
 }
+
+@import 'prism.less';

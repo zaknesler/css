@@ -4,20 +4,22 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="512x512" href="favicon.png" />
+        <meta name="theme-color" content="#ef233c" />
 
         <title>Zak Nesler</title>
 
-        <link rel="stylesheet" href="https://use.typekit.net/jha2wpt.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" />
         <link rel="stylesheet" href="css/app.css" />
     </head>
     <body class="font-sans bg-grey-lighter text-grey-darker text-lg font-normal tracking-normal leading-normal antialiased">
         <div class="min-h-screen min-w-screen flex flex-col lg:flex-row">
-            <div class="hidden lg:block max-w-sm w-full"></div>
+            <div class="hidden lg:block max-w-full w-full md:w-2/5 lg:max-w-sm"></div>
 
-            <div class="flex-0 static lg:fixed pin-none lg:pin-y lg:pin-l max-w-full lg:max-w-sm w-full lg:overflow-y-auto bg-white p-8">
-                <div class="text-4xl md:text-5xl text-black font-bold">Zak Nesler</div>
+            <div class="flex-0 static lg:fixed pin-none lg:pin-y lg:pin-l border-b lg:border-b-0 lg:border-r max-w-full w-full lg:w-2/5 lg:max-w-sm lg:overflow-y-auto bg-white p-8">
+                <div class="text-4xl text-black leading-none font-bold text-center lg:text-left">Zak Nesler</div>
 
-                <div class="mt-8 list-reset w-full flex items-center justify-start flex-wrap">
+                <div class="mt-8 list-reset w-full flex items-center justify-center lg:justify-start flex-wrap">
                     <a class="block w-6 h-6 text-red hover:text-red-dark font-medium no-underline mr-8" href="https://linkedin.com/in/zaknesler">
                         <svg class="w-full h-full fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" class="icon"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero" /></svg>
                     </a>
@@ -36,14 +38,14 @@
                 <p class="mt-4">Interested in having me work with you on your next project? Let's <a class="text-red hover:text-red-dark hover:underline no-underline" href="mailto:contact@zaknesler.com">get in touch</a>.</p>
             </div>
 
-            <div class="flex-1 lg:overflow-y-auto p-8">
-                <div class="max-w-lg p-8 -my-8">
-                    <div class="bg-white p-8 my-8">
-                        <div class="text-2xl font-bold leading-tight mb-2">
+            <div class="flex-1 lg:overflow-y-auto pt-16 lg:p-16">
+                <div class="w-full lg:max-w-lg">
+                    <div class="bg-white p-8 mb-16 lg:rounded lg:border">
+                        <div class="text-2xl font-bold leading-tight">
                             <a class="block text-grey-darkest hover:underline no-underline" href="#">Out of your comfort zone</a>
                         </div>
 
-                        <div class="text-sm text-grey-dark font-bold uppercase tracking-wide mb-4">June 2, 2018</div>
+                        <div class="text-sm text-grey-dark font-bold uppercase tracking-wide mt-1 mb-4">June 2, 2018</div>
 
                         <div class="markdown">
                             <p>When you’re a developer, there are certain things that are ingrained into your mind. You don’t necessarily want them there, but they’re hard to ignore. This is why every new idea in the world of development comes as a shock.</p>
@@ -52,11 +54,43 @@
                         </div>
 
                         <div class="mt-4">
-                            <a class="text-red hover:text-red-dark hover:underline no-underline" href="#">Read more &rarr;</a>
+                            <a class="inline-block border hover:border-grey bg-grey-lightest text-grey-dark hover:text-grey-darker rounded py-1 px-2 text-base no-underline" href="#">Read more &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 mb-16 lg:rounded lg:border">
+                        <div class="text-2xl font-bold leading-tight">
+                            <a class="block text-grey-darkest hover:underline no-underline" href="#">Highlighting your code</a>
+                        </div>
+
+                        <div class="text-sm text-grey-dark font-bold uppercase tracking-wide mt-1 mb-4">April 23, 2018</div>
+
+                        <div class="markdown">
+                            <p>For an example snippet of code, let's take into consideration the following snippet:</p>
+
+                            <pre class="language-js"><code class="language-js">let mix = require('laravel-mix');
+let tailwind = require('tailwindcss');
+
+mix.setPublicPath('public')
+  .less('resources/assets/less/app.less', 'public/css')
+  .options({
+    postCss: [
+      tailwind('./tailwind.js'),
+    ]
+  })
+  .js('resources/assets/js/app.js', 'public/js');</code></pre>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iusto sit aliquam, alias velit rerum, perferendis accusamus sapiente aut consequatur, eligendi debitis totam nostrum saepe.</p>
+                            <p>It is also worth noting that <code class="language-php">$hello = 'hello, world!';</code> means that some things just aren't the way they seem to actually be.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <a class="inline-block border hover:border-grey bg-grey-lightest text-grey-dark hover:text-grey-darker rounded py-1 px-2 text-base no-underline" href="#">Read more &rarr;</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="js/app.js"></script>
     </body>
 </html>

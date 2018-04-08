@@ -194,7 +194,7 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'muli',
+      'Nunito Sans',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -221,11 +221,15 @@ module.exports = {
       'serif',
     ],
     'mono': [
+      'Operator Mono',
+      'Source Code Pro',
+      'Roboto Mono',
+      'Fira Code',
+      'Fira Mono',
       'Menlo',
       'Monaco',
       'Consolas',
       'Liberation Mono',
-      'Courier New',
       'monospace',
     ]
   },
@@ -278,15 +282,15 @@ module.exports = {
   */
 
   fontWeights: {
-    'hairline': 100,
-    'thin': 200,
-    'light': 300,
+    // 'hairline': 100,
+    // 'thin': 200,
+    // 'light': 300,
     'normal': 400,
     'medium': 500,
     'semibold': 600,
     'bold': 700,
-    'extrabold': 800,
-    'black': 900,
+    // 'extrabold': 800,
+    // 'black': 900,
   },
 
 
@@ -650,6 +654,7 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '16': '4rem',
   },
 
 
@@ -678,6 +683,7 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '16': '4rem',
   },
 
 
