@@ -221,9 +221,7 @@ module.exports = {
       'serif',
     ],
     'mono': [
-      'Operator Mono',
       'Source Code Pro',
-      'Roboto Mono',
       'Fira Code',
       'Fira Mono',
       'Menlo',
