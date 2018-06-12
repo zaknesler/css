@@ -1,17 +1,17 @@
 ## Index
 - Designs
-  - [Login](https://zaknes.github.io/css/designs/login/)
+  - [Login](https://zaknesler.github.io/css/designs/login/)
 - Recreations
-  - [GitHub](https://zaknes.github.io/css/recreations/github/)
-  - [Google](https://zaknes.github.io/css/recreations/google/)
-  - [Sitosis](https://zaknes.github.io/css/recreations/sitosis/)
+  - [GitHub](https://zaknesler.github.io/css/recreations/github/)
+  - [Google](https://zaknesler.github.io/css/recreations/google/)
+  - [Sitosis](https://zaknesler.github.io/css/recreations/sitosis/)
 - Sandbox
-  - [Grid](https://zaknes.github.io/css/sandbox/grid/)
+  - [Grid](https://zaknesler.github.io/css/sandbox/grid/)
 - Tailwind
-  - [Blog](https://zaknes.github.io/css/tailwind/blog/public/)
-  - [Color](https://zaknes.github.io/css/tailwind/color/)
-  - [Forum](https://zaknes.github.io/css/tailwind/forum/)
-  - [Login](https://zaknes.github.io/css/tailwind/login/)
-  - [Zak Nesler](https://zaknes.github.io/css/tailwind/zaknesler/public/)
+  - [Blog](https://zaknesler.github.io/css/tailwind/blog/public/)
+  - [Color](https://zaknesler.github.io/css/tailwind/color/)
+  - [Forum](https://zaknesler.github.io/css/tailwind/forum/)
+  - [Login](https://zaknesler.github.io/css/tailwind/login/)
+  - [Zak Nesler](https://zaknesler.github.io/css/tailwind/zaknesler/public/)
 - WordPress
-  - [Minimal](https://zaknes.github.io/css/wordpress/minimal/)
+  - [Minimal](https://zaknesler.github.io/css/wordpress/minimal/)
